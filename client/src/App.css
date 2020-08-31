@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+
+@media screen and (min-width: 270px) {
+  .intro h1 {
+    font-size: 30px;
+    color: teal;
+    margin: 0;
+    font-family: 'Lexend Peta', sans-serif!important;
+    letter-spacing: -10px;
+
+  }
+}
+
+@media screen and (max-width: 956px) {
+  .intro h1 {
+    font-size: 100px;
+    color: teal;
+    margin: 0;
+    font-family: 'Lexend Peta', sans-serif!important;
+    letter-spacing: -10px;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .intro h1 {
+    font-size: 50px;
+    color: teal;
+    margin: 0;
+    font-family: 'Lexend Peta', sans-serif!important;
+    letter-spacing: -10px;
+  }
+}
+@media screen and (min-width: 956px) {
+  .intro h1 {
+    font-size: 150px;
+    color: teal;
+    margin: 0;
+    font-family: 'Lexend Peta', sans-serif!important;
+    letter-spacing: -10px;
+  }
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+.form-field{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+}
+.form-field label{
+  align-self: flex-start;
+}
+.form-field input, .form-field select {
+  width: 100%;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  align-items: center;
+}
+.next-btn {
+  margin-top: 20px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.register-btns, .confirm-btns{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+.register-btns button {
+  margin-left: 10px;
+}
+
+.form-confirm{
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  align-items: stretch;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 50px;
+  background: #fafafa;
+  box-shadow:  3px 5px 7px 2px #f3f3f3, 5px 5px 10px #ffffff;
+}
+
+.login-btns{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.user-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #fafafa;
+  box-shadow:  3px 5px 7px 2px #f3f3f3, 5px 5px 10px #ffffff;
+}
+.avatar {
+  border-radius: 50%;
+  box-shadow:  0 2px 3px #c6c6c6, 5px 5px 3px #ffffff;
+}
+.occupation{
+  font-size: 11px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.fa-globe-europe, .fa-link, .fa-trash-alt {
+  padding: 12px;
+  border-radius: 50px;
+  background: #fafafa;
+  box-shadow:  -3px -1px 3px #c6c6c6, 
+             5px 5px 3px #ffffff;
+}
+.fa-trash-alt{
+  color: rgb(189, 3, 3);
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+.fa-link{
+  color: rgb(5, 131, 5);
+}
+.fa-globe-europe{
+  color: rgb(10, 10, 143);
+}
+.users{
+  background: #fafafa;
+}
+
+.short-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.short-info p {
+  margin: 0;
+}
+.card-info{
+  font-weight: 500;
+}
+.user-list{
+  margin: 0 15px!important
+}
+
+.btn-card, .edit-btn, .delete-btn{
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 50px;
+  background: #fafafa;
+  box-shadow:  -3px -1px 3px #c6c6c6, 
+             5px 5px 3px #ffffff;
+  outline: none;
+  transition: all 0.5s;
+}
+.delete{
+  background: #c00f0f;
+  color: white;
+}
+
+.btn-card:hover , .fa-trash-alt:hover, .edit-btn:hover, .delete-btn:hover{
+  background: #fafafa;
+  box-shadow:  0px 4px 3px #c6c6c6, 5px 5px 3px #ffffff;
+}
+.delete:hover{
+  background: #c00f0f;
+  box-shadow:  0px 4px 3px #c6c6c6, 5px 5px 3px #ffffff;
+}
+.profil-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profil{
+  padding: 80px;
+  border-radius: 50px;
+  background: #fafafa;
+  box-shadow:  -3px -1px 3px #c6c6c6, 
+             5px 5px 3px #ffffff;
+  margin: 15% auto 0px auto;
+  position: relative;
+}
+
+.profil-pic-name{
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.personal-info{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit-btn{
+  align-self: flex-end;
+  padding: 10px 20px;
+  border: none;
+}
+button{
+  outline: none!important;
+}
+.backdrop{
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.301); */
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 288%;
+  background-color: rgba(0, 0, 0, 0.301);
+  z-index: 1;
+  transform: translate(-25%, -35%);
+  z-index: 1;
+}
+.delete-modal-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fafafac7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+}
+
+.edit-modal-body{
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 42%;
+}
+
+.fa-exclamation-triangle{
+  color: rgb(199, 13, 13);
+}
+
+input, select{
+  border: none;
+  padding: 10px;
+  border-radius: 46px;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px 0px #c6c6c6, 5px 5px 3px #ffffff;
+  outline: none;
+}
+@media screen and (max-width: 767px) {
+  .add-user{
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 767px) {
+  .add-user{
+    width: 60%;
+    margin: 0px auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.updatedUser{
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.add-msg{
+  padding: 10px;
+  background: rgba(102, 102, 255, 0.74);
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+}
+.notOwner{
+  font-size: 10px;
+  color: #9c9c9c;
+}
+
+.home{
+  background: tomato;
+  height: 100vh;
+  
+background: rgb(218,218,218);
+background: linear-gradient(-69deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 80%);
+
+}
+
+.triangle {
+  clip-path: polygon(100% 50%, 0 100%, 0 0);
+  
+background: rgb(218,218,218);
+background: linear-gradient(69deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 100%);
+
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+
+.intro p {
+  font-family: 'Lexend Peta', sans-serif!important;
+  font-size: 20px;
+  font-style: italic;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.home-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-btn{
+  width: 180px;
+  background-color: teal;
+  color: white;
+}
+.home-btn:hover{
+  color: black;
+}
+
+.welcome{
+  font-family: sans-serif;
+  font-size: 30px;
+  margin-left: 50px;
+}
+.welcome span {
+  font-weight: 700;
+}
+.welcome-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 50px;
+  background: #fafafa;
+  box-shadow:  3px 5px 7px 2px #f3f3f3, 5px 5px 10px #ffffff;
+  margin: 30px auto
+}
+
+.navBar{
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fafafa;
+  box-shadow:  0px 4px 17px 2px #f3f3f3, 5px 5px 10px #ffffff;
+}
+.navBar a{
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  font-weight: 400;
+}
+.navBar a:hover{
+  text-decoration: none;
+}
+
+.go-to-dashboard{
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.go-to-dashboard:before{
+  content:'> '
+}
+.go-to-dashboard:after{
+  content:' <'
+}
+.alert-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(247, 24, 24);
+  padding: 20px;
+  width: 100%;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.alert-login p {
+  margin: 0;
+}
